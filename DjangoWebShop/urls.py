@@ -17,6 +17,7 @@ from django.conf.urls import url,include
 # from django.contrib import admin
 
 urlpatterns = [
+    url(r'^', include("myadmin.urls")), # 暂时以后台管理为例
     url(r'^myadmin/', include('myadmin.urls')),
     url(r'^ueditor/', include('ueditor.urls')),
 ]
