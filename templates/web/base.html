@@ -54,7 +54,7 @@
                   <ul class="layout-user-downmenu-list">
                   {% if request.session.vipuser %}
                     <li class="layout-user-downmenu-item">
-                      <a href="#" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">个人中心</a>
+                      <a href="{% url 'vip_info' %}" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">个人中心</a>
                     </li>
                     <li class="layout-user-downmenu-item">
                       <a href="{% url 'vip_orders' %}" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">我的订单</a>

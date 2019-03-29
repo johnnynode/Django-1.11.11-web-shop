@@ -40,3 +40,51 @@ def odstate(request):
     except Exception as err:
         print(err)
         return HttpResponse("订单处理失败！")
+
+def info(request):
+    ''' 个人中心 个人信息 '''
+    try:
+        uid = request.session['vipuser'].get('id')
+        ob = Users.objects.get(id=uid)
+        context={"user":ob}
+        print('ob')
+        print(ob)
+        return render(request,"web/vipinfo.html",context)
+    except Exception as err:
+        print(err)
+        return HttpResponse("没有找到要修改的信息！")
+
+def update(request, uid):
+    ''' 个人中心 更新信息'''
+    try:
+        print('uid: ', id);
+        ob = Users.objects.get(id=uid)
+        ob.save()
+        return HttpResponse("修改成功!")
+    except Exception as err:
+        print(err)
+        return HttpResponse("修改失败！")
+
+def resetps(request):
+    ''' 个人中心 重置密码'''
+    try:
+        uid = request.session['vipuser'].get('id')
+        ob = Users.objects.get(id=uid)
+        context={"user":ob}
+        print('ob')
+        print(ob)
+        return render(request,"web/vipresetpw.html",context)
+    except Exception as err:
+        print(err)
+        return HttpResponse("没有找到要修改的信息！")
+
+def doresetps(request, uid):
+    ''' 个人中心 执行重置密码'''
+    try:
+        print('uid: ', id);
+        ob = Users.objects.get(id=uid)
+        ob.save()
+        return HttpResponse("修改成功!")
+    except Exception as err:
+        print(err)
+        return HttpResponse("修改失败！")
