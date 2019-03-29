@@ -11,7 +11,7 @@
  Target Server Version : 50725
  File Encoding         : utf-8
 
- Date: 03/20/2019 08:39:13 AM
+ Date: 03/29/2019 08:37:55 AM
 */
 
 SET NAMES utf8mb4;
@@ -126,13 +126,13 @@ CREATE TABLE `detail` (
   `price` double(6,2) DEFAULT NULL,
   `num` int(11) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Records of `detail`
 -- ----------------------------
 BEGIN;
-INSERT INTO `detail` VALUES ('11', '20180003', '1', '连衣裙', '380.00', '2'), ('10', '20180002', '6', '条纹T恤衫', '180.00', '2'), ('8', '20180002', '3', '苹果Iphone 6 S', '3680.00', '3'), ('9', '20180002', '4', '佳能DS6000', '2880.00', '1'), ('12', '20180003', '2', '联想T4000', '3980.00', '1'), ('13', '20180004', '5', '儿童套装', '120.00', '2'), ('14', '20180004', '8', 'huaweiT2000', '2300.00', '1'), ('15', '20180005', '12', '橘黄色连衣裙', '380.00', '2'), ('16', '20180005', '10', '佳能数码相机', '800.00', '1'), ('17', '20180006', '4', '佳能DS6000', '2880.00', '2'), ('18', '20180006', '1', '连衣裙', '380.00', '1'), ('19', '20180007', '10', '佳能数码相机', '800.00', '2'), ('20', '20180007', '3', '苹果Iphone 6 S', '3680.00', '1'), ('21', '20180008', '11', '儿童套装天蓝色', '178.00', '3'), ('22', '20180008', '4', '佳能DS6000', '2880.00', '1'), ('23', '20180009', '5', '儿童套装', '120.00', '2'), ('24', '20180009', '11', '儿童套装天蓝色', '178.00', '2'), ('25', '20180010', '7', '红色连衣裙', '200.00', '15'), ('26', '20180010', '1', '连衣裙', '380.00', '2'), ('27', '20180010', '6', '条纹T恤衫', '180.00', '2'), ('28', '20180011', '5', '儿童套装', '120.00', '3'), ('29', '20180011', '1', '连衣裙', '580.00', '2'), ('30', '20180012', '4', '佳能DS6000', '2880.00', '10'), ('31', '20180012', '7', '红色连衣裙', '200.00', '1'), ('32', '20180013', '1', '连衣裙', '580.00', '1'), ('33', '20180013', '4', '佳能DS6000', '2880.00', '3'), ('34', '20180014', '11', '儿童套装天蓝色', '178.00', '2'), ('35', '20180014', '4', '佳能DS6000', '2880.00', '1');
+INSERT INTO `detail` VALUES ('1', '1', '1', 'x1', '30.00', '1'), ('2', '2', '1', 'x1', '30.00', '2'), ('3', '3', '3', '哈雷', '22.00', '2');
 COMMIT;
 
 -- ----------------------------
@@ -209,7 +209,7 @@ CREATE TABLE `django_session` (
 --  Records of `django_session`
 -- ----------------------------
 BEGIN;
-INSERT INTO `django_session` VALUES ('s9wbdm80x9ruohso8c0gerohdxgwshwy', 'MDY5NWVmMGFiYTNmY2QwNWY0YmNmY2FkZmJhNzBmMzk4Y2Q4ZDljMjp7InZlcmlmeWNvZGUiOiI0MDgwIn0=', '2018-10-28 13:00:53.414423'), ('u9vxwbhxvtrxoqs9jst88kuip0t5fyir', 'NzhiNTY5MTE2MTY1MmY3NGE0NDYwMjRjNjZhMGExODAwODczOWI4MTp7InZlcmlmeWNvZGUiOiIyMTc4IiwiYWRtaW51c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6Ilx1N2JhMVx1NzQwNlx1NTQ1OCIsInBhc3N3b3JkIjoiMjEyMzJmMjk3YTU3YTVhNzQzODk0YTBlNGE4MDFmYzMiLCJhZGRyZXNzIjoiXHU1MzE3XHU0ZWFjXHU1ZTAyXHU2NzFkXHU5NjMzXHU1MzNhXHU1OTI3XHU1YzcxXHU1YjUwMDA3XHU1M2Y3IiwicGhvbmUiOiIxMzU2NjY4Njg2OCIsImVtYWlsIjoiMTIyNzk0MTA1QHFxLmNvbSIsInN0YXRlIjowfSwic2hvcGxpc3QiOnt9LCJ2aXB1c2VyIjp7ImlkIjozLCJ1c2VybmFtZSI6InpoYW5nc2FuIiwibmFtZSI6Ilx1NWYyMFx1NGUwOSIsInBhc3N3b3JkIjoiMjAyY2I5NjJhYzU5MDc1Yjk2NGIwNzE1MmQyMzRiNzAiLCJhZGRyZXNzIjoiXHU1MzE3XHU0ZWFjXHU1ZTAyXHU0ZTA5XHU5MWNjXHU2Y2IzXHU4NjExXHU4M2M3XHU2NzUxMTAyXHU1M2Y3IiwicGhvbmUiOiIxMjM0NTY3Njg5MCIsImVtYWlsIjoiemhhbmdzYW5AMTEuY29tIiwic3RhdGUiOjB9fQ==', '2018-11-11 14:09:53.195401'), ('wjgqvtubhsdblsb143n6q1s0wnmwlh87', 'MGNkOGY1NGNiZjUwNjJhOGNkMTVkYTgwM2ZhZjIzNDQ2N2E5N2NhZDp7InZlcmlmeWNvZGUiOiI4MDI5IiwiYWRtaW51c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6Ilx1N2JhMVx1NzQwNlx1NTQ1OCIsInBhc3N3b3JkIjoiMjEyMzJmMjk3YTU3YTVhNzQzODk0YTBlNGE4MDFmYzMiLCJhZGRyZXNzIjoiXHU1MzE3XHU0ZWFjXHU1ZTAyXHU2NzFkXHU5NjMzXHU1MzNhXHU1OTI3XHU1YzcxXHU1YjUwMDA3XHU1M2Y3IiwicGhvbmUiOiIxMzU2NjY4Njg2OCIsImVtYWlsIjoiMTIyNzk0MTA1QHFxLmNvbSIsInN0YXRlIjowfX0=', '2018-10-28 13:00:12.942459');
+INSERT INTO `django_session` VALUES ('8i6g2cxek0e732i9dqqu4wx3l30ca42l', 'MDY5ZjkzNTE1NmRhMTMzMzlkNWQyMmZmZjM5ZGI0NzQ3MjdiMDdhMTp7InZlcmlmeWNvZGUiOiI0MjIxIiwiYWRtaW51c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwibmFtZSI6Ilx1N2JhMVx1NzQwNlx1NTQ1ODIiLCJwYXNzd29yZCI6IjIxMjMyZjI5N2E1N2E1YTc0Mzg5NGEwZTRhODAxZmMzIiwiYWRkcmVzcyI6Ilx1NTMxN1x1NGVhY1x1NWUwMlx1NjcxZFx1OTYzM1x1NTMzYVx1NTkyN1x1NWM3MVx1NWI1MDAwN1x1NTNmNyIsInBob25lIjoiMTM1NjY2ODY4NjgiLCJlbWFpbCI6IjEyMjc5NDEwNUBxcS5jb20iLCJzdGF0ZSI6MH19', '2018-04-23 06:42:32.449065'), ('mwsr6yu2q1010woxzlpsccxufg5trz1t', 'MGRmOGM0ZDljZjJhMDI4YTE0ZTg3MTkxOTE5N2IxZDczOTNkMzQ4Yzp7InZlcmlmeWNvZGUiOiI5Njg1Iiwic2hvcGxpc3QiOnt9LCJhZG1pbnVzZXIiOnsiaWQiOjMsInVzZXJuYW1lIjoiemhhbmdzYW4iLCJuYW1lIjoiXHU1ZjIwXHU0ZTA5IiwicGFzc3dvcmQiOiIyMDJjYjk2MmFjNTkwNzViOTY0YjA3MTUyZDIzNGI3MCIsImFkZHJlc3MiOiJcdTUzMTdcdTRlYWNcdTVlMDJcdTRlMDlcdTkxY2NcdTZjYjNcdTg2MTFcdTgzYzdcdTY3NTExMDJcdTUzZjciLCJwaG9uZSI6IjEyMzQ1Njc2ODkwIiwiZW1haWwiOiJ6aGFuZ3NhbkAxMS5jb20iLCJzdGF0ZSI6MH0sInZpcHVzZXIiOnsiaWQiOjMsInVzZXJuYW1lIjoiemhhbmdzYW4iLCJuYW1lIjoiXHU1ZjIwXHU0ZTA5IiwicGFzc3dvcmQiOiIyMDJjYjk2MmFjNTkwNzViOTY0YjA3MTUyZDIzNGI3MCIsImFkZHJlc3MiOiJcdTUzMTdcdTRlYWNcdTVlMDJcdTRlMDlcdTkxY2NcdTZjYjNcdTg2MTFcdTgzYzdcdTY3NTExMDJcdTUzZjciLCJwaG9uZSI6IjEyMzQ1Njc2ODkwIiwiZW1haWwiOiJ6aGFuZ3NhbkAxMS5jb20iLCJzdGF0ZSI6MH19', '2019-04-11 15:40:49.687904');
 COMMIT;
 
 -- ----------------------------
@@ -231,13 +231,13 @@ CREATE TABLE `goods` (
   `addtime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `typeid` (`typeid`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Records of `goods`
 -- ----------------------------
 BEGIN;
-INSERT INTO `goods` VALUES ('1', '3', '连衣裙', '香奈儿', '', '580.00', '1534852423.6255617.jpg', '20', '0', '16', '2', '2018-04-09 10:09:59'), ('2', '6', '联想T4000', '联想', '<p>&nbsp; &nbsp; &nbsp;<span style=\"color: rgb(255, 0, 0);\">联想T4000 &nbsp; &nbsp;</span> &nbsp; &nbsp;<img src=\"/static/media/article/20180702/20180702211439879.jpg\" title=\"20180702/20180702211439879.jpg\" alt=\"20180702/20180702211439879.jpg\" width=\"140\" height=\"150\" style=\"width: 140px; height: 150px;\"/> &nbsp; &nbsp; &nbsp;</p>', '3980.00', '1540726913.561231.jpg', '10', '0', '4', '1', '2018-04-09 10:11:31'), ('3', '9', '苹果Iphone 6 S', '苹果公司', '苹果公司的Iphone 6 S', '3680.00', '1523416469.7021515.jpg', '28', '0', '19', '2', '2018-04-11 03:14:29'), ('4', '4', '佳能DS6000', '佳能品牌', '佳能品牌的单反相机D6000', '2880.00', '1523416548.696832.jpg', '30', '0', '20', '1', '2018-04-11 03:15:48'), ('5', '3', '儿童套装', '葫芦娃品牌', '葫芦娃品牌的儿童套装', '120.00', '1523416625.352381.jpg', '50', '0', '19', '1', '2018-04-11 03:17:05'), ('6', '7', '条纹T恤衫', '七匹狼', '七匹狼的条纹T恤衫', '180.00', '1523416690.8561788.jpg', '40', '0', '7', '1', '2018-04-11 03:18:10'), ('7', '3', '红色连衣裙', '佰可依品牌', '佰可依品牌的红色连衣裙', '200.00', '1523416800.3909934.jpg', '30', '0', '17', '1', '2018-04-11 03:20:00'), ('8', '9', 'huaweiT2000', '华为品牌', '华为品牌的huaweiT2000', '2300.00', '1523416925.5592127.jpg', '50', '0', '3', '1', '2018-04-11 03:22:05'), ('9', '9', '华为800手机', '华为品牌', '华为品牌的华为800手机', '2680.00', '1523417017.3019178.jpg', '30', '0', '4', '1', '2018-04-11 03:23:37'), ('10', '4', '佳能数码相机', '佳能品牌', '佳能品牌', '800.00', '1523417097.9236016.jpg', '30', '0', '5', '2', '2018-04-11 03:24:57'), ('11', '8', '儿童套装天蓝色', '葫芦娃品牌', '葫芦娃品牌的儿童套装天蓝色', '178.00', '1523417196.8742225.jpg', '28', '0', '5', '1', '2018-04-11 03:26:36'), ('12', '3', '橘黄色连衣裙', 'GAP品牌', 'GAP品牌的橘黄色连衣裙', '380.00', '1523417307.8867464.jpg', '30', '0', '5', '1', '2018-04-11 03:28:27'), ('13', '9', '苹果Iphone 6 S', '苹果公司', '<p><span style=\"text-decoration: underline; color: rgb(255, 0, 0);\"><strong>adsfasdfasdf</strong></span></p><p><span style=\"text-decoration: underline; color: rgb(255, 0, 0);\"><strong><img src=\"/static/media/article/20180821/20180821212430314.jpg\" title=\"20180821/20180821212430314.jpg\" alt=\"20180821/20180821212430314.jpg\"/></strong></span></p>', '1980.00', '1534857910.9247618.jpg', '20', '0', '2', '1', '2018-08-21 13:25:11');
+INSERT INTO `goods` VALUES ('1', '3', 'x1', 'ss', '<p>阿萨德范德萨发大水</p>', '30.00', '1553749540.5400069.jpg', '111', '0', '3', '1', '2019-03-28 05:05:40'), ('2', '4', '照相机', '三星', '<p>sdfdsfdsfdsfsfds</p>', '3000.00', '1553780402.4391391.jpg', '122', '0', '0', '1', '2019-03-28 13:40:02'), ('3', '11', '哈雷', '测试', '<p>sw</p>', '22.00', '1553780560.702442.jpeg', '112', '0', '1', '1', '2019-03-28 13:42:40'), ('4', '3', '【设计师合作款】女装 乔其纱吊带连衣裙 417143 优衣库', 'x', '<p>sds</p>', '12.00', '1553786503.20545.webp', '1', '0', '0', '1', '2019-03-28 15:21:43'), ('5', '4', 'huawei', '1h', '<p>水电费胜多负少的<br/></p>', '11.00', '1553787080.101948.jpg', '1', '0', '0', '1', '2019-03-28 15:31:20'), ('6', '3', '红', '防守打法', '<p>是的范德萨</p>', '1.00', '1553787114.7070642.jpg', '22', '0', '0', '1', '2019-03-28 15:31:54'), ('7', '9', 'iphone', '112', '<p>sdfsdf</p>', '2233.00', '1553787164.509481.jpg', '1', '0', '0', '1', '2019-03-28 15:32:44');
 COMMIT;
 
 -- ----------------------------
@@ -255,13 +255,13 @@ CREATE TABLE `orders` (
   `total` double(8,2) unsigned DEFAULT NULL,
   `state` tinyint(1) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20180015 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Records of `orders`
 -- ----------------------------
 BEGIN;
-INSERT INTO `orders` VALUES ('20180003', '3', '王五', '北京市昌平区回龙观流星花园A6-3-403', '123423', '12345676890', '2018-04-16 01:20:22', '4740.00', '2'), ('20180002', '3', '李四', '北京市宣武区菜市口100号新龙小区3#-2-608', '100088', '666666666', '2018-04-16 01:18:45', '14280.00', '3'), ('20180004', '4', '菜花', '北京市宣武区菜市口100号新龙小区3#-2-608', '1456', '1234567890', '2018-04-16 01:22:05', '2540.00', '0'), ('20180005', '4', '小王', '北京市昌平区回龙观流星花园A6-3-403', '3456', '1234567890', '2018-04-16 06:40:45', '1560.00', '2'), ('20180006', '3', '李四', '北京市三里河蘑菇村102号', '123123', '12345676890', '2018-04-18 02:57:20', '6140.00', '0'), ('20180007', '3', '张三', '北京市三里河蘑菇村102号', '1234', '12345676890', '2018-04-18 12:16:23', '5280.00', '2'), ('20180008', '3', '王五', '北京市海定区上地三街08号嘉华大厦B6-203', '123123', '12345676890', '2018-04-25 14:00:28', '3414.00', '2'), ('20180009', '3', '李四', '北京市宣武区菜市口100号新龙小区3#-2-608', '234234', '12345676890', '2018-05-09 13:17:42', '596.00', '0'), ('20180010', '3', '张三', '北京市三里河蘑菇村102号', '', '12345676890', '2018-07-15 09:14:05', '4120.00', '3'), ('20180011', '3', '张三', '北京市三里河蘑菇村102号', '', '12345676890', '2018-08-28 13:34:05', '1520.00', '2'), ('20180012', '3', '张三', '北京市三里河蘑菇村102号', '100086', '12345676890', '2018-09-02 08:03:32', '29000.00', '1'), ('20180013', '3', '李四', '北京市三里河蘑菇村66号', '100086', '12345676890', '2018-09-27 13:04:26', '9220.00', '0'), ('20180014', '3', 'lisi', '北京市三里河蘑菇村102号', '100086', '12345676890', '2018-10-28 14:09:53', '3236.00', '2');
+INSERT INTO `orders` VALUES ('1', '3', '张三', '北京市三里河蘑菇村102号', '123456', '12345676890', '2019-03-28 05:06:34', '30.00', '2'), ('2', '3', '张三', '北京市三里河蘑菇村102号', '8851', '12345676890', '2019-03-28 13:36:57', '60.00', '3'), ('3', '3', '张三', '北京市三里河蘑菇村102号', '', '12345676890', '2019-03-28 13:43:06', '44.00', '3');
 COMMIT;
 
 -- ----------------------------
@@ -274,13 +274,13 @@ CREATE TABLE `type` (
   `pid` int(11) unsigned DEFAULT '0',
   `path` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Records of `type`
 -- ----------------------------
 BEGIN;
-INSERT INTO `type` VALUES ('1', '服装', '0', '0,'), ('2', '数码2', '0', '0,'), ('3', '女装', '1', '0,1,'), ('4', '数码相机', '2', '0,2,'), ('5', '食品', '0', '0,'), ('6', '电脑', '2', '0,2,'), ('7', '男装', '1', '0,1,'), ('8', '儿童装', '1', '0,1,'), ('9', '手机', '2', '0,2,'), ('11', '特色小吃', '5', '0,5,'), ('12', '休闲零食', '5', '0,5,'), ('16', '辣条', '5', '0,5,');
+INSERT INTO `type` VALUES ('1', '服装', '0', '0,'), ('2', '数码', '0', '0,'), ('3', '女装', '1', '0,1,'), ('4', '数码相机', '2', '0,2,'), ('5', '食品', '0', '0,'), ('6', '电脑', '2', '0,2,'), ('7', '男装', '1', '0,1,'), ('8', '儿童装', '1', '0,1,'), ('9', '手机', '2', '0,2,'), ('11', '零食', '5', '0,5,');
 COMMIT;
 
 -- ----------------------------
@@ -301,13 +301,13 @@ CREATE TABLE `users` (
   `addtime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Records of `users`
 -- ----------------------------
 BEGIN;
-INSERT INTO `users` VALUES ('1', 'admin', '管理员', '21232f297a57a5a743894a0e4a801fc3', '0', '北京市朝阳区大山子007号', '100086', '13566686868', '122794105@qq.com', '0', '2018-04-07 21:20:08'), ('3', 'zhangsan', '张三', '202cb962ac59075b964b07152d234b70', '1', '北京市三里河蘑菇村102号', '100086', '12345676890', 'zhangsan@11.com', '0', '2018-04-08 11:11:18'), ('4', 'lisi', '李四', 'e10adc3949ba59abbe56e057f20f883e', '1', '北京市三里河蘑菇村103号', '100088', '6666666666666', 'lisi@11.com', '2', '2018-04-08 11:12:21'), ('7', 'along', '张小龙', '202cb962ac59075b964b07152d234b70', '1', '北京市海定区上地三街08号嘉华大厦B6-203', '100098', '12345657890', 'along@163.com', '1', '2018-04-10 07:49:45'), ('12', 'zhangle', '张乐', '202cb962ac59075b964b07152d234b70', '0', '北京市海定区上地三街08号嘉华大厦B6-203', '100086', '12345657890', 'zhangle@126.com', '1', '2018-04-10 07:56:36'), ('13', 'wangsheng', '王胜', '202cb962ac59075b964b07152d234b70', '1', '北京市三里河蘑菇村102号', '100088', '33333333333', 'wangsheng@163.com', '1', '2018-04-10 07:57:27'), ('14', 'xusheng', '徐盛', '202cb962ac59075b964b07152d234b70', '1', '北京市三里河蘑菇村103号', '100088', '12345657890', 'xusheng@122.com', '1', '2018-04-10 07:58:15'), ('15', 'xumo', '许墨', '202cb962ac59075b964b07152d234b70', '0', '北京市三里河蘑菇村103号', '100088', '12345657890', 'xumo@136.com', '1', '2018-04-10 07:59:32'), ('16', 'zhangmo', '张墨', '202cb962ac59075b964b07152d234b70', '1', '北京市海定区上地三街08号嘉华大厦B6-203', '100086', '12345324678', 'zhangmo@163.com', '1', '2018-04-10 08:00:21'), ('17', 'zhangjun', '张军', '202cb962ac59075b964b07152d234b70', '0', '北京市宣武区菜市口100号新龙小区3#-2-608', '100086', '12345657890', 'zhangjun@163.com', '1', '2018-04-10 08:01:06'), ('18', 'qq', 'ququ', '202cb962ac59075b964b07152d234b70', '1', '北京市三里河蘑菇村102号', '100088', '1234567899', 'zhangsan@qq.com', '1', '2018-04-12 15:35:18'), ('19', 'zhangsan22', '张三丰', '202cb962ac59075b964b07152d234b70', '1', '北京市宣武区菜市口100号新龙小区3#-2-608', '100088', '454678', 'zhangsan@qq.com', '2', '2018-04-12 15:36:49');
+INSERT INTO `users` VALUES ('1', 'admin', '管理员2', '21232f297a57a5a743894a0e4a801fc3', '1', '北京市朝阳区大山子007号', '100086', '13566686868', '@qq.com', '0', '2018-04-07 21:20:08'), ('3', 'zhangsan', '张三', '202cb962ac59075b964b07152d234b70', '1', '北京市三里河蘑菇村102号', '100086', '12345676890', 'zhangsan@11.com', '0', '2018-04-08 11:11:18'), ('4', 'lisi', '李四', '202cb962ac59075b964b07152d234b70', '0', '北京市三里河蘑菇村103号', '100088', '6666666666666', 'lisi@11.com', '1', '2018-04-08 11:12:21'), ('6', 'wangwu', '王五', '202cb962ac59075b964b07152d234b70', '0', '北京市三里河蘑菇村102号', '100086', '12345676890', 'zhangsan@11.com', '2', '2018-04-08 12:58:58');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
